@@ -1,11 +1,16 @@
+import { FC } from "react";
 import styles from "./Letter.module.scss";
 
-const Letter = () => {
+interface ILetterProps {
+    setShow: (show: boolean) => void;
+}
+
+const Letter:FC<ILetterProps> = ({setShow}) => {
   return (
     <div className={styles.letter__wrapper}>
-      <div className={styles.overlay} />
+      <div className={styles.overlay} onClick={() => setShow(false)}/>
       <div className={styles.letter__container}>
-        <div className={styles.letter}>
+        <div className={styles.letter} onClick={() => setShow(false)}>
           Вимріяна і близька донині,
           <br /> Незнайома, але й знана теж,
           <br /> Заховавшись в довгій самотині,

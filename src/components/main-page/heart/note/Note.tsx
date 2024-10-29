@@ -8,7 +8,6 @@ const Note = () => {
         <div className={styles.line}/>
         <div className={styles.line}/>
         <div className={styles.line}/>
-        <div className={styles.line}/>
       </span>
     </div>
   );
