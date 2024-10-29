@@ -1,3 +1,4 @@
+import Letter from "../../letter/Letter";
 import styles from "./Heart.module.scss";
 import Note from "./note/Note";
 
@@ -10,6 +11,8 @@ const Heart = () => {
           <Note />
         </span>
       </div>
+
+      <Letter/>
     </div>
   );
 };
