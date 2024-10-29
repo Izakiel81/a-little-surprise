@@ -7,8 +7,6 @@
 
 .heart__container {
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   position: absolute;
   top: 50%;
@@ -18,7 +16,7 @@
 
 .heart {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .heart::before,
@@ -56,4 +54,22 @@
   &::before {
     transform: rotate(-65deg);
   }
+}
+
+
+.note{
+    width: 200px;
+    height: 100px;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.heart__container:hover .note{
+    transform: translate(-50%, -150%);
+
 }

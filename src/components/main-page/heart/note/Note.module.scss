@@ -1,0 +1,14 @@
+.note__container {
+  display: flex;
+
+  z-index: 1;
+}
+
+.note {
+  width: 200px;
+  height: 100px;
+
+  background-color: #f6eee3;
+
+  border-radius: 20px;
+}
